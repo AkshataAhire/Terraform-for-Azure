@@ -3,7 +3,6 @@ provider "azurerm"{
 }
 
 resource "azurerm_resource_group" "resgrp" {
-name = ""
-location = ""
-
+name = "terraform_group"
+location = "${var.location}"
 }
