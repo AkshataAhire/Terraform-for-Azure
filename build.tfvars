@@ -2,12 +2,9 @@ tags = {
   author = "Akshata" 
 }
 
-subnet_name_online = "online"
-
-subnet_name_web = "web"
-
-vm_count_online = "2"
-
-vm_count_web = "2"
+static_url = "http://staticassest"
+quote_service_url = "http://quoteservice"
+newsfeed_url = "http://newsfeedurl"
+front_end_url = ""
 
 appservice_newsfeed_token = "T1&eWbYXNWG1w1^YGKDPxAWJ@^et^&kX"
