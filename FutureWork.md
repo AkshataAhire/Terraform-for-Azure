@@ -4,10 +4,10 @@ As a DevOps Engineer i would like to build a CI/CD pipeline to automate deployme
 every single change, therefore i would discuss with the team about the deployment automation and with the help of the team,
 start implementing the below changes after explaining them the below terms :
 
-              Version control : Every change is recorded, it is easier to keep track of the changes made
-              Artefact repository : You need one, as the artefacts are immutable amd cannot be changed for every deployment
-              Orchestration tool : To build and provision the infrastructure 
-              Configuration management tool : To deploy, configure and manage servers
+         Version control : Every change is recorded, it is easier to keep track of the changes made
+         Artefact repository : You need one, as the artefacts are immutable amd cannot be changed for every deployment
+         Orchestration tool : To build and provision the infrastructure 
+         Configuration management tool : To deploy, configure and manage servers
               
 
 1. I would like all the developers in the team to commit the code to the centralized version control/source repository
