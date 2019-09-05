@@ -5,7 +5,8 @@ every single change, therefore i would discuss with the team about the deploymen
 start implementing the below changes after explaining them the below terms :
 
          Version control : Every change is recorded, it is easier to keep track of the changes made
-         Artefact repository : You need one, as the artefacts are immutable amd cannot be changed for every deployment
+         Artefact repository : You need one, as the artefacts are immutable amd cannot be changed for every 
+                               deployment
          Orchestration tool : To build and provision the infrastructure 
          Configuration management tool : To deploy, configure and manage servers
               
