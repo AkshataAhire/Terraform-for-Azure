@@ -35,6 +35,6 @@ resource "azurerm_app_service" "frontendappser" {
 
   site_config {
     always_on        = "${var.appservice_always_on}"
-    windows_fx_version = "frontend|${var.appservice_frontend_image}"
+    default_documents = "frontend|${var.appservice_frontend_image}"
   }
 }
