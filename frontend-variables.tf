@@ -20,5 +20,9 @@ variable "appservice_always_on" {
 
 variable "appservice_frontend_image" {
   type        = "string"
-  #default     = "successpage"
+  default     = "successpage.html"
 }
+
+variable "deployment_name" {
+  type = "string"
+  }
