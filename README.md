@@ -5,7 +5,7 @@ I have written a code to build the infrastructure in Azure.
 Terraform plan is used to see and verify the changes you want to make in the infrastructure
 Terraform apply can be run once you verify and are happy with the changes in the infrastructure
 
-The frontend_app is the main service for frontend \n
+The frontend_app is the main service for frontend \t
 The main.tf file contains the resource group details etc \n
 The .tfvar file contains details which should not be saved in the repository \n
 The variables need to be exposed in the separate file \n
