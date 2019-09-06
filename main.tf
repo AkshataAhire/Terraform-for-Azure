@@ -36,6 +36,6 @@ resource "azurerm_app_service" "frontendappser" {
 
   site_config {
     always_on        = "${var.appservice_always_on}"
-    default_documents = ["success.html"]
+    default_documents = ["successpage.html"]
   }
 }
