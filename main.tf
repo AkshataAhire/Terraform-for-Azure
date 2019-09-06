@@ -8,6 +8,11 @@ resource "azurerm_resource_group" "resgrp" {
   tags = "$(var.tags)"
 }
 
+resource "random_id" "front_end" {
+    keepers = {
+		deployment_name = "${var.deployment_name}"
+    }
+
 resource "azurerm_app_service_plan" "appserplan" {
   name                = "terraform-app-svc-plan"
   resource_group_name = "${azurerm_resource_group.resggrp.name}"
@@ -23,18 +28,14 @@ resource "azurerm_app_service_plan" "appserplan" {
 }
 
 resource "azurerm_app_service" "frontendappser" {
-  name                = "terraform-app-windows-app-ser"
+  name                = "${var.deployment_name}-${random_id.front_end.hex}"
   resource_group_name = "${azurerm_resource_group.resgrp.name}"
   app_service_plan_id = "${azurerm_app_service_plan.appserplan.id}"
   location            = "${azurerm_resource_group.resgrp.location}"
   tags                = "${var.tags}"
 
-  app_settings {
-    WEBSITES_ENABLE_APP_SERVICE_STORAGE = false
-  }
-
   site_config {
     always_on        = "${var.appservice_always_on}"
-    default_documents = "frontend|${var.appservice_frontend}"
+    default_documents = ["success.html"]
   }
 }
